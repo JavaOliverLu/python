@@ -175,8 +175,8 @@ for xb in range(len(orib)):
 max_b = max(peakb)
 realpeakb=tempareab[(peakb.index(max_b))]
 
-x=(turnpointr*0.299+turnpointg*0.587 +turnpointb*0.114)-(realpeakr*0.299+realpeakg*0.587 +realpeakb*0.114)
-y=-1.348*x+61.174
+x=(realpeakr*0.299+realpeakg*0.587 +realpeakb*0.114)
+y=-0.8152*x+89.872
 BigString="預估pm2.5濃度為: "+str(y)+"(μg/m3)"
 messagebox.showinfo("預估pm2.5濃度",BigString)
 
