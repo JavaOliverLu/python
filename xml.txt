@@ -1,0 +1,4 @@
+location = /xml {
+    default_type application/xml;
+    return 200 "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<response>\n  <ip>$remote_addr</ip>\n  <country_code>$ip_country_code</country_code>\n  <country_name>$ip_country_name</country_name>\n  <asn>$ip_asn</asn>\n  <as_desc>$ip_aso</as_desc>\n  <user_agent>$http_user_agent</user_agent>\n</response>\n";
+}
